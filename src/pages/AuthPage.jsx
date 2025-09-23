@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import axios from "axios";
-import { toast } from 'react-toastify';
-import { useNavigate } from "react-router-dom";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import { toast } from 'react-toastify';
 
 const AuthPage = () => {
   const [isLogin, setIsLogin] = useState(true);
