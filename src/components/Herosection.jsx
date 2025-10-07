@@ -9,7 +9,9 @@ import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
-    <div className="relative min-h-screen overflow-hidden bg-gradient-to-b from-[#1e1e1e] to-[#1e1e1e]/95">
+   
+     <div className="relative min-h-screen overflow-hidden bg-gradient-to-b from-[#1A1A1D] to-[#1A1A1D]/95">
+
       {/* Grid pattern */}
       <div
         className="absolute inset-0 z-0 opacity-5"
@@ -21,9 +23,9 @@ const HeroSection = () => {
       />
 
       {/* Blur glows */}
-      <div className="hidden sm:block absolute -top-20 -left-20 w-96 h-96 bg-[#1829ea]/20 rounded-full filter blur-[100px] animate-spin-slow" />
+      <div className="hidden sm:block absolute -top-20 -left-20 w-96 h-96 bg-[#332D56]/20 rounded-full filter blur-[100px] animate-spin-slow" />
       <div
-        className="hidden sm:block absolute -bottom-20 -right-20 w-96 h-96 bg-[#1829ea]/20 rounded-full filter blur-[100px] animate-spin-slow"
+        className="hidden sm:block absolute -bottom-20 -right-20 w-96 h-96 bg-[#332D56]/20 rounded-full filter blur-[100px] animate-spin-slow"
         style={{ animationDirection: "reverse" }}
       />
 
@@ -45,15 +47,15 @@ const HeroSection = () => {
             {/* Header & Description */}
             <div className="space-y-4 text-center sm:text-left">
               <div className="flex items-center justify-center sm:justify-start space-x-2">
-                <div className="h-1 w-10 sm:w-12 bg-blue-600" />
-                <span className="text-blue-500 text-lg sm:text-xl font-medium">
-                  Welcome to CodeArena
+                <div className="h-1 w-10 sm:w-12 bg-[#6EACDA]" />
+                <span className="text-[#6EACDA] text-lg sm:text-xl font-medium">
+                  Welcome to CodeElevate
                 </span>
               </div>
 
               <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight">
                 <span>Your Journey.</span>
-                <span className="block text-blue-600">Your Success.</span>
+                <span className="block text-[#6EACDA]">Your Success.</span>
               </h2>
 
               <p className="text-sm sm:text-base text-muted-foreground max-w-xl mx-auto sm:mx-0">
@@ -68,7 +70,7 @@ const HeroSection = () => {
               <Link to="/auth" className="w-full sm:w-auto" title="Sign up or log in to get started!">
                 <Button
                   size="lg"
-                  className="bg-[#1829ea] hover:bg-[#1829ea]/80 w-full sm:w-auto text-white"
+                  className="w-full sm:w-auto border-[#646CFF] text-white bg-[#232946] hover:bg-[#646CFF] hover:text-white hover:border-[#646CFF] focus:ring-2 focus:ring-[#646CFF] focus:outline-none transition-colors duration-200"
                 >
                   Get Started
                 </Button>
@@ -157,7 +159,7 @@ const HeroSection = () => {
         {/* Call to action */}
         <div className="mt-16 sm:mt-24 text-center relative">
           <div className="inline-block relative">
-            <div className="h-1 w-full bg-[#1829ea] absolute bottom-0 left-0"></div>
+            <div className="h-1 w-full bg-[#364385] absolute bottom-0 left-0"></div>
             <h2 className="text-xl sm:text-2xl font-semibold mb-2">
               Ready to accelerate your developer journey?
             </h2>

@@ -1,16 +1,18 @@
-/* Default dark mode */
-html, body {
-  background-color: #161A30 !important;
-  color: #F0ECE5; /* light text for dark bg */
-}
-
-/* Light mode */
-html.light, body.light {
-  background-color: #7785cd !important; 
-  color: #000000; 
+/* Default Dark Mode */
+html, body, #root {
+  height: 100%;
+  background-color: #000 !important;
+  color: #F0ECE5;
 }
 
 
-html.light .subtext, body.light .subtext {
-  color: #555555; 
+/* Light Mode */
+html.light {
+  background-color: #ffffff; /* light background */
+  color: #24292f; /* dark text */
+}
+
+/* Subtext in Light Mode */
+html.light .subtext {
+  color: #555555; /* softer gray for secondary text */
 }

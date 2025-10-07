@@ -28,10 +28,11 @@ const GoogleSheetSummary = () => {
           type="button"
           className="
             flex items-center gap-2 px-6 py-3 text-base font-semibold rounded-2xl text-white cursor-pointer
-            bg-gradient-to-br from-purple-700 to-blue-600
-            shadow-lg shadow-blue-500/30
+            bg-[#232946]
+            shadow-md shadow-blue-500/30
             transition-transform duration-300 ease-in-out
-            hover:scale-105 hover:shadow-blue-600/50
+            hover:scale-105 hover:shadow-white/30
+
             select-none
             w-full md:w-auto
             md:flex-1
