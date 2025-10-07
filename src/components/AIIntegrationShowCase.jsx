@@ -48,21 +48,21 @@ const AIIntegrationShowcase = () => {
 
   return (
     <section className="max-w-7xl mx-auto px-6 py-16 relative">
-      <h2 className="text-4xl font-extrabold mb-12 text-center text-gray-900 dark:text-gray-100">
-        AI Integrations That Empower You
+      <h2 className="text-4xl font-extrabold mb-12 text-center text-white-900 dark:text-gray-100">
+       Transform Your Workflow with Smart AI
       </h2>
 
       {/* Scroll Arrows */}
       <button
         onClick={() => scroll("left")}
-        className="absolute left-2 top-1/2 translate-y-4 z-10 bg-white dark:bg-gray-800 shadow-md rounded-full p-2 hover:scale-110 transition"
+        className="absolute left-2 top-1/2 translate-y-4 z-10 bg-black dark:bg-gray-800 shadow-md rounded-full p-2 hover:scale-110 transition"
       >
         <ChevronLeft size={28} />
       </button>
 
       <button
         onClick={() => scroll("right")}
-        className="absolute right-2 top-1/2 translate-y-4 z-10 bg-white dark:bg-gray-800 shadow-md rounded-full p-2 hover:scale-110 transition"
+        className="absolute right-2 top-1/2 translate-y-4 z-10 bg-black dark:bg-gray-800 shadow-md rounded-full p-2 hover:scale-110 transition"
       >
         <ChevronRight size={28} />
       </button>
@@ -87,7 +87,7 @@ const AIIntegrationShowcase = () => {
         {features.map(({ icon, title, description }) => (
           <div
             key={title}
-            className="snap-center flex-shrink-0 w-80 p-10 bg-white dark:bg-gray-900 rounded-2xl
+            className="snap-center flex-shrink-0 w-80 p-10  bg-[#999db4] dark:bg-gray-900 rounded-2xl
               shadow-md dark:shadow-black/40 transition-all duration-300 cursor-pointer
               transform hover:scale-105 hover:-translate-y-1
               hover:shadow-[0_8px_24px_rgba(99,102,241,0.4)]

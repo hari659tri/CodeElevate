@@ -2,20 +2,20 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { Link } from "react-router-dom";
 import {
-  Calendar,
   Code,
-  Award,
   User,
   Trophy,
-  Terminal,
-  Bot,
-  Brain,
+  Monitor,
+  Activity,
   ChevronLeft,
   ChevronRight,
   Users,
   X,
+  Terminal,
+  BarChart,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { BookOpen, Target } from "react-feather";
 
 const NavItem = ({ icon, label, href, isCollapsed, closeSidebar }) => (
   <Link
@@ -39,7 +39,7 @@ export const Sidebar = ({ isMobileOpen = false, closeSidebar = () => {} }) => {
   return (
     <div
       className={cn(
-        "fixed sm:static z-40 h-screen overflow-y-auto transition-all duration-300 ease-in-out border-r bg-[#161A30] border-[#31304D]",
+        "fixed sm:static z-40 h-screen overflow-y-auto transition-all duration-300 ease-in-out border-r bg-[#333446] border-[#bebde4]",
         "flex flex-col", // Ensures stacking and pushing content
         isCollapsed ? "w-16" : "w-64",
         isMobileOpen ? "left-0" : "left-[-100%] sm:left-0"
@@ -60,14 +60,14 @@ export const Sidebar = ({ isMobileOpen = false, closeSidebar = () => {} }) => {
       {/* Brand */}
       <a href="/" className="flex h-14 items-center px-4 border-b border-[#31304D]">
         <h2 className="font-bold text-xl text-[#F0ECE5]">
-          {isCollapsed ? "CA" : "CodeArena"}
+          {isCollapsed ? "CE" : "CodeElevate"}
         </h2>
       </a>
 
       {/* Navigation */}
       <div className="flex flex-col gap-1 p-2 flex-1">
         <NavItem
-          icon={<Calendar className="h-4 w-4 text-[#B6BBC4]" />}
+          icon={<Trophy className="h-4 w-4 text-[#B6BBC4]" />}
           label="Contests"
           href="/contests"
           isCollapsed={isCollapsed}
@@ -81,43 +81,43 @@ export const Sidebar = ({ isMobileOpen = false, closeSidebar = () => {} }) => {
           closeSidebar={closeSidebar}
         />
         <NavItem
-          icon={<Terminal className="h-4 w-4 text-[#B6BBC4]" />}
+          icon={<Monitor className="h-4 w-4 text-[#B6BBC4]" />}
           label="Code Editor"
           href="/questions"
           isCollapsed={isCollapsed}
           closeSidebar={closeSidebar}
         />
         <NavItem
-          icon={<Award className="h-4 w-4 text-[#B6BBC4]" />}
-          label="Leaderboard"
+          icon={<Activity className="h-4 w-4 text-[#B6BBC4]" />}
+          label="Statistics"
           href="/leaderboard"
           isCollapsed={isCollapsed}
           closeSidebar={closeSidebar}
         />
         <NavItem
-          icon={<Bot className="h-4 w-4 text-[#B6BBC4]" />}
-          label="Internship Tracker"
+          icon={<Target className="h-4 w-4 text-[#B6BBC4]" />}
+          label="Opportunities"
           href="/intern"
           isCollapsed={isCollapsed}
           closeSidebar={closeSidebar}
         />
         <NavItem
           icon={<User className="h-4 w-4 text-[#B6BBC4]" />}
-          label="Profile"
+          label="Your Profile"
           href="/profile"
           isCollapsed={isCollapsed}
           closeSidebar={closeSidebar}
         />
         <NavItem
-          icon={<Brain className="h-4 w-4 text-[#B6BBC4]" />}
-          label="Learn"
+          icon={<BookOpen className="h-4 w-4 text-[#B6BBC4]" />}
+          label="Learn & Grow"
           href="/learn"
           isCollapsed={isCollapsed}
           closeSidebar={closeSidebar}
         />
         <NavItem
           icon={<Users className="h-4 w-4 text-[#B6BBC4]" />}
-          label="Peer Rooms"
+          label="Dev Rooms"
           href="/room"
           isCollapsed={isCollapsed}
           closeSidebar={closeSidebar}

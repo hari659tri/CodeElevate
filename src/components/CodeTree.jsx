@@ -46,7 +46,7 @@ const TreeItem = ({
 };
  const CodeTree = () => {
   return (
-    <div className="bg-vscode-bg border border-border rounded-md p-1 max-w-xs">
+    <div className=" bg-vscode-bg border border-border rounded-md p-1 max-w-xs">
       <div className="text-sm text-vscode-lineNumber font-medium py-2 px-3 border-b border-border">
         EXPLORER
       </div>

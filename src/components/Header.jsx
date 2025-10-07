@@ -71,7 +71,7 @@ export const Header = ({ toggleSidebar }) => {
     <header
       className="flex h-14 items-center gap-4 px-4 lg:px-6 border-b justify-between"
       style={{
-        backgroundColor: "#161A30",
+        backgroundColor: "black",
         borderColor: "#31304D",
       }}
     >
@@ -90,7 +90,7 @@ export const Header = ({ toggleSidebar }) => {
           />
           <Input
             type="search"
-            placeholder="Search problems, contests..."
+            placeholder="Search"
             className="w-full appearance-none pl-8 shadow-none border-none"
             style={{
               backgroundColor: "#31304D",
@@ -118,7 +118,7 @@ export const Header = ({ toggleSidebar }) => {
             <Moon className="w-4 h-4" />
           )}
           <span className="ml-1 text-sm hidden sm:inline">
-            {darkMode ? "Light Mode" : "Dark Mode"}
+            {darkMode ? "Light Theme" : "Dark Theme"}
           </span>
         </Button>
 
@@ -141,7 +141,7 @@ export const Header = ({ toggleSidebar }) => {
                 border: "none",
               }}
             >
-              Logout
+              Sign Out
             </Button>
           </div>
         ) : (
@@ -154,7 +154,7 @@ export const Header = ({ toggleSidebar }) => {
                 border: "none",
               }}
             >
-              Login
+              Sign In
             </Button>
           </Link>
         )}

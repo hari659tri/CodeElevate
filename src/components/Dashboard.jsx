@@ -26,7 +26,7 @@ const Dashboard = () => {
   const userData = JSON.parse(localStorage.getItem("user"));
 
 
-  const [output, setOutput] = useState("");
+const [output, setOutput] = useState("");
   const textLines = [
     "AI is fetching your coding data...",
     "AI is analyzing your coding patterns...",
@@ -56,10 +56,11 @@ const Dashboard = () => {
     return () => clearInterval(typeInterval);
   }, []);
 
+
   return (
     <motion.div
       className="container py-6 space-y-8 px-4"
-      style={{ backgroundColor: "#161A30", color: "#E0E0E0" }}
+      // style={{ backgroundColor: "#161A30", color: "#E0E0E0" }}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
@@ -82,7 +83,7 @@ const Dashboard = () => {
           </h1>
         )} */}
         <p className="text-sm text-gray-400">
-          Track your progress, join contests, and improve your coding skills
+          Sharpen your skills, compete in contests, and measure your progress.
         </p>
       </motion.div>
       <GoogleSheetSummary />
